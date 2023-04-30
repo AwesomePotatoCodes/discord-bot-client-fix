@@ -1,13 +1,16 @@
 {
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"name": "Discord Bot Client",
 	"version": "1.0.0",
 	"description": "This extension allows you to use https://botclient.tk",
-	"author": "Flam3rboy",
+	"author": "Flam3rboy, Fixed by AwesomePotatoCodes",
 	"background": {
 		"scripts": ["script.js"]
 	},
-	"permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+	
+	"permissions": ["webRequest", "webRequestBlocking"],
+	"host_permissions": ["<all_urls>"],
+	
 	"page_action": {
 		"default_popup": "popup.html"
 	},
